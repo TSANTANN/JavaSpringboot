@@ -8,9 +8,26 @@ import org.springframework.stereotype.Service;
 
 import br.com.nalli.model.Person;
 
+
 @Service
 public class PersonService {
 	private final AtomicLong counter = new AtomicLong();
+	
+	public Person crate(Person person) {
+		
+		return person;
+	}
+	
+	public void delete(String id) {
+				
+		
+	}
+	
+	
+	public Person update(Person person) {
+		
+		return person;
+	}
 	
 	public Person findByid(String id) {
 		Person person = new Person();
