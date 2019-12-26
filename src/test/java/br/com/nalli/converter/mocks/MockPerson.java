@@ -9,7 +9,7 @@ import br.com.nalli.data.vo.PersonVO;
 public class MockPerson {
 	
 	public Person mockEntity() {
-		return mockEntity();
+		return mockEntity(0);
 	}
 
 	public PersonVO mockVO() {
@@ -20,22 +20,33 @@ public class MockPerson {
 		
 		List<Person> persons = new ArrayList<Person>();
 		
-		for (int i = 0; i<14;i++) {
+		for (int i = 0; i<14; i++) {
 			persons.add(mockEntity(i));
 		}
 		
 		return persons;
 	}
 
+	public List<PersonVO> mockVOList(){
+		
+		List<PersonVO> persons = new ArrayList<PersonVO>();
+		
+		for (int i = 0; i<14; i++) {
+			persons.add(mockVO(i));
+		}
+		
+		return persons;
+	}
+	
 	private Person mockEntity(Integer number) {
 		
 		Person person = new Person();
 		
-			person.setAddress("Adress test" + number);
-			person.setFirstName("First Name Test" + number);
-			person.setLastName("LAst Name Test" + number);
-			person.setGender((number % 2)==0 ? "Male":"Female");
-			person.setId(number.longValue());
+		person.setAddress("Address Test" + number);
+		person.setFirstName("First Name Test" + number);
+		person.setLastName("Last Name Test" + number);
+		person.setGender((number % 2)==0 ? "Male":"Female");
+		person.setId(number.longValue());
 			
 		return person;
 	}
@@ -44,9 +55,9 @@ public class MockPerson {
 
 		PersonVO person = new PersonVO();
 		
-		person.setAddress("Adress test" + number);
+		person.setAddress("Address Test" + number);
 		person.setFirstName("First Name Test" + number);
-		person.setLastName("LAst Name Test" + number);
+		person.setLastName("Last Name Test" + number);
 		person.setGender((number % 2)==0 ? "Male":"Female");
 		person.setId(number.longValue());
 		
