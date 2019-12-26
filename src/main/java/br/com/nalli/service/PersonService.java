@@ -5,9 +5,9 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import br.com.nalli.data.model.Person;
 import br.com.nalli.exception.ResourceNotFoundException;
-import br.com.nalli.model.Person;
-import repository.PersonRepository;
+import br.com.nalli.repository.PersonRepository;
 
 
 @Service

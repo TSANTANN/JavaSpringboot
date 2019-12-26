@@ -1,4 +1,4 @@
-package br.com.nalli.model;
+package br.com.nalli.data.model;
 
 import java.io.Serializable;
 
