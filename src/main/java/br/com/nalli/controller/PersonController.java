@@ -13,7 +13,6 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import br.com.nalli.data.model.Person;
 import br.com.nalli.data.vo.PersonVO;
 import br.com.nalli.service.PersonService;
 
