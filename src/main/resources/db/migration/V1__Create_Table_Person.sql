@@ -5,3 +5,4 @@ CREATE TABLE `person` (
   `gender` varchar(6) NOT NULL,
   `last_name` varchar(100) NOT NULL,
   PRIMARY KEY (`id`)
+) ENGINE=MyISAM AUTO_INCREMENT=6 DEFAULT CHARSET=latin1;
