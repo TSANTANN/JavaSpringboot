@@ -17,7 +17,7 @@ import br.com.nalli.data.vo.PersonVO;
 import br.com.nalli.service.PersonService;
 
 @RestController
-@RequestMapping("/person")
+@RequestMapping("/api/person/v1")
 public class PersonController {
 	@Autowired
 	private PersonService services;

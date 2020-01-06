@@ -2,6 +2,9 @@ package br.com.nalli.data.vo;
 
 import java.io.Serializable;
 
+import com.fasterxml.jackson.annotation.JsonPropertyOrder;
+
+@JsonPropertyOrder({"id","address","firstName","lastName","gender"})
 public class PersonVO implements Serializable {
 
 	private static final long serialVersionUID = 1L;
