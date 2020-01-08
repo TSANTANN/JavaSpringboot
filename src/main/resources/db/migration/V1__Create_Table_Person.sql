@@ -1,8 +1,8 @@
 CREATE TABLE `person` (
-  `id` bigint(20) NOT NULL AUTO_INCREMENT,
+  `id` bigint NOT NULL AUTO_INCREMENT,
   `address` varchar(100) NOT NULL,
   `first_name` varchar(100) NOT NULL,
   `gender` varchar(6) NOT NULL,
   `last_name` varchar(100) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=6 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDb AUTO_INCREMENT=6 DEFAULT CHARSET=latin1;
