@@ -1,4 +1,4 @@
-CREATE TABLE `books` (
+CREATE TABLE `book` (
   `id` bigint NOT NULL AUTO_INCREMENT,
   `author` longtext NULL,
   `launch_date` datetime(6) NOT NULL,
